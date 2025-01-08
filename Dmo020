@@ -1,0 +1,28 @@
+import java.util.Scanner;
+
+public class SumOfNumbers {
+    public static void main(String[] args) {
+        // Create a Scanner object to take input from the user
+        Scanner scanner = new Scanner(System.in);
+
+        // Variable to store the sum
+        int sum = 0;
+
+        // Ask the user how many numbers they want to enter
+        System.out.print("How many numbers do you want to sum? ");
+        int n = scanner.nextInt();
+
+        // Loop to take multiple numbers and add them to sum
+        for (int i = 1; i <= n; i++) {
+            System.out.print("Enter number " + i + ": ");
+            int num = scanner.nextInt();
+            sum += num;  // Add the number to the sum
+        }
+
+        // Close the scanner
+        scanner.close();
+
+        // Output the sum
+        System.out.println("The sum of the numbers is: " + sum);
+    }
+}
