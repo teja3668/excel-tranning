@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class Demo021 {
+public class Demo020 {  
 
     public static String getFizzBizz(int num) {
         if (num <= 0) {
@@ -28,5 +28,5 @@ public class Demo021 {
 
         System.out.println(getFizzBizz(input));
         scanner.close();
-    }
+}
 }
